@@ -7,9 +7,9 @@ gem 'rails', '~> 6.1.4.1'
 gem 'bootsnap', '~> 1.4.6'
 
 # Responders respond_to and respond_with
-gem 'responders', '~> 3.0'
+gem 'responders', '~> 3.0', '>= 3.0.0'
 
-gem 'sprockets', '~> 3.7.0'
+gem 'sprockets', '~> 3.7.2'
 
 # Default values for AR models
 gem 'default_value_for', '~> 3.4.0'
@@ -27,26 +27,26 @@ gem 'marginalia', '~> 1.10.0'
 gem 'declarative_policy', '~> 1.0.0'
 
 # Authentication libraries
-gem 'devise', '~> 4.7.2'
+gem 'devise', '~> 4.7.3'
 gem 'bcrypt', '~> 3.1', '>= 3.1.14'
-gem 'doorkeeper', '~> 5.5.0.rc2'
-gem 'doorkeeper-openid_connect', '~> 1.7.5'
+gem 'doorkeeper', '~> 5.5.0.0'
+gem 'doorkeeper-openid_connect', '~> 1.8.0'
 gem 'rexml', '~> 3.2.5'
 gem 'ruby-saml', '~> 1.13.0'
-gem 'omniauth', '~> 1.8'
+gem 'omniauth', '~> 1.9', '>= 1.9.1'
 gem 'omniauth-auth0', '~> 2.0.0'
-gem 'omniauth-azure-activedirectory-v2', '~> 1.0'
-gem 'omniauth-azure-oauth2', '~> 0.0.9' # Deprecated v1 version
+gem 'omniauth-azure-activedirectory-v2', '~> 1.0', '>= 1.0.0'
+gem 'omniauth-azure-oauth2', '~> 0.0.10' # Deprecated v1 version
 gem 'omniauth-cas3', '~> 1.1.4'
 gem 'omniauth-facebook', '~> 4.0.0'
-gem 'omniauth-github', '~> 1.4'
-gem 'omniauth-gitlab', '~> 1.0.2'
+gem 'omniauth-github', '~> 1.4', '>= 1.4.0'
+gem 'omniauth-gitlab', '~> 1.0.3'
 gem 'omniauth-google-oauth2', '~> 0.6.0'
 gem 'omniauth-kerberos', '~> 0.3.0', group: :kerberos
 gem 'omniauth-oauth2-generic', '~> 0.2.2'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-saml', '~> 1.10', '>= 1.10.0'
 gem 'omniauth-shibboleth', '~> 1.3.0'
-gem 'omniauth-twitter', '~> 1.4'
+gem 'omniauth-twitter', '~> 1.4', '>= 1.4.0'
 gem 'omniauth_crowd', '~> 2.4.0'
 gem 'omniauth-authentiq', '~> 0.3.3'
 gem 'gitlab-omniauth-openid-connect', '~> 0.8.0', require: 'omniauth_openid_connect'
@@ -179,7 +179,7 @@ gem 'diffy', '~> 3.3'
 gem 'diff_match_patch', '~> 0.1.0'
 
 # Application server
-gem 'rack', '~> 2.2.3'
+gem 'rack', '~> 2.2.3', '>= 2.2.3.1'
 # https://github.com/sharpstone/rack-timeout/blob/master/README.md#rails-apps-manually
 gem 'rack-timeout', '~> 0.5.1', require: 'rack/timeout/base'
 
@@ -196,7 +196,7 @@ gem 'acts-as-taggable-on', '~> 7.0'
 
 # Background jobs
 gem 'sidekiq', '~> 6.2.2'
-gem 'sidekiq-cron', '~> 1.0'
+gem 'sidekiq-cron', '~> 1.0', '>= 1.0.4'
 gem 'redis-namespace', '~> 1.8.1'
 gem 'gitlab-sidekiq-fetcher', '0.8.0', require: 'sidekiq-reliable-fetch'
 
@@ -292,7 +292,7 @@ gem 'terser', '1.0.2'
 gem 'addressable', '~> 2.8'
 gem 'gemojione', '~> 3.3'
 gem 'gon', '~> 6.4.0'
-gem 'request_store', '~> 1.5'
+gem 'request_store', '~> 1.5', '>= 1.5.0'
 gem 'base32', '~> 0.3.0'
 
 gem 'gitlab-license', '~> 2.0'
@@ -317,15 +317,15 @@ gem 'thrift', '>= 0.14.0'
 
 # I18n
 gem 'ruby_parser', '~> 3.15', require: false
-gem 'rails-i18n', '~> 6.0'
+gem 'rails-i18n', '~> 6.0', '>= 6.0.0'
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.0'
 gem 'gettext', '~> 3.3', require: false, group: :development
 
 gem 'batch-loader', '~> 2.0.1'
 
 # Perf bar
-gem 'peek', '~> 1.1'
+gem 'peek', '~> 1.1', '>= 1.1.0'
 
 # Snowplow events tracking
 gem 'snowplow-tracker', '~> 0.6.1'
@@ -344,7 +344,7 @@ group :development do
   gem 'letter_opener_web', '~> 1.4.1'
 
   # Better errors handler
-  gem 'better_errors', '~> 2.9.0'
+  gem 'better_errors', '~> 2.9.1'
 
   # thin instead webrick
   gem 'thin', '~> 1.8.0'
@@ -448,10 +448,10 @@ gem 'benchmark-memory', '~> 0.1', require: false
 gem 'activerecord-explain-analyze', '~> 0.1', require: false
 
 # OAuth
-gem 'oauth2', '~> 1.4'
+gem 'oauth2', '~> 1.4', '>= 1.4.7'
 
 # Health check
-gem 'health_check', '~> 3.0'
+gem 'health_check', '~> 3.0', '>= 3.0.0'
 
 # System information
 gem 'vmstat', '~> 2.3.0'
@@ -493,8 +493,8 @@ gem 'unleash', '~> 3.2.2'
 gem 'gitlab-experiment', '~> 0.6.4'
 
 # Structured logging
-gem 'lograge', '~> 0.5'
-gem 'grape_logging', '~> 1.7'
+gem 'lograge', '~> 0.11', '>= 0.11.2'
+gem 'grape_logging', '~> 1.8', '>= 1.8.3'
 
 # DNS Lookup
 gem 'gitlab-net-dns', '~> 0.9.1'
