@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 COPY . .
 RUN cargo build --release
 
-FROM debian:buster-slim
+FROM debian:10.12-slim
 
 COPY --from=builder /usr/src/app/target/release/app .
 
