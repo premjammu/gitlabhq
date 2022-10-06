@@ -305,7 +305,7 @@ gem 'sentry-raven', '~> 3.1'
 
 # PostgreSQL query parsing
 #
-gem 'pg_query', '~> 2.1'
+gem 'pg_query', '~> 2.1', '>= 2.1.1'
 
 gem 'premailer-rails', '~> 1.10.3'
 
@@ -474,14 +474,14 @@ end
 gem 'spamcheck', '~> 0.1.0'
 
 # Gitaly GRPC protocol definitions
-gem 'gitaly', '~> 14.3.0.pre.rc2'
+gem 'gitaly', '~> 14.8.0.0.0'
 
 # KAS GRPC protocol definitions
 gem 'kas-grpc', '~> 0.0.2'
 
 gem 'grpc', '~> 1.30.2'
 
-gem 'google-protobuf', '~> 3.17.1'
+gem 'google-protobuf', '~> 3.19.6'
 
 gem 'toml-rb', '~> 2.0'
 
