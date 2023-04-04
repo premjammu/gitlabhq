@@ -2,14 +2,14 @@
 
 source 'https://rubygems.org'
 
-gem 'rails', '~> 6.1.4.1'
+gem 'rails', '~> 6.1.7.3'
 
 gem 'bootsnap', '~> 1.4.6'
 
 # Responders respond_to and respond_with
-gem 'responders', '~> 3.0'
+gem 'responders', '~> 3.0', '>= 3.0.0'
 
-gem 'sprockets', '~> 3.7.0'
+gem 'sprockets', '~> 4.2.0'
 
 # Default values for AR models
 gem 'default_value_for', '~> 3.4.0'
@@ -27,29 +27,29 @@ gem 'marginalia', '~> 1.10.0'
 gem 'declarative_policy', '~> 1.0.0'
 
 # Authentication libraries
-gem 'devise', '~> 4.7.2'
+gem 'devise', '~> 4.7.3'
 gem 'bcrypt', '~> 3.1', '>= 3.1.14'
-gem 'doorkeeper', '~> 5.5.0.rc2'
-gem 'doorkeeper-openid_connect', '~> 1.7.5'
+gem 'doorkeeper', '~> 5.5.0.0'
+gem 'doorkeeper-openid_connect', '~> 1.8.0'
 gem 'rexml', '~> 3.2.5'
 gem 'ruby-saml', '~> 1.13.0'
-gem 'omniauth', '~> 1.8'
+gem 'omniauth', '~> 2.1', '>= 2.1.0'
 gem 'omniauth-auth0', '~> 2.0.0'
-gem 'omniauth-azure-activedirectory-v2', '~> 1.0'
-gem 'omniauth-azure-oauth2', '~> 0.0.9' # Deprecated v1 version
+gem 'omniauth-azure-activedirectory-v2', '~> 1.0', '>= 1.0.0'
+gem 'omniauth-azure-oauth2', '~> 0.0.10' # Deprecated v1 version
 gem 'omniauth-cas3', '~> 1.1.4'
 gem 'omniauth-facebook', '~> 4.0.0'
-gem 'omniauth-github', '~> 1.4'
-gem 'omniauth-gitlab', '~> 1.0.2'
+gem 'omniauth-github', '~> 2.0', '>= 2.0.0'
+gem 'omniauth-gitlab', '~> 3.0.0'
 gem 'omniauth-google-oauth2', '~> 0.6.0'
 gem 'omniauth-kerberos', '~> 0.3.0', group: :kerberos
 gem 'omniauth-oauth2-generic', '~> 0.2.2'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-saml', '~> 2.0', '>= 2.0.0'
 gem 'omniauth-shibboleth', '~> 1.3.0'
-gem 'omniauth-twitter', '~> 1.4'
+gem 'omniauth-twitter', '~> 1.4', '>= 1.4.0'
 gem 'omniauth_crowd', '~> 2.4.0'
 gem 'omniauth-authentiq', '~> 0.3.3'
-gem 'gitlab-omniauth-openid-connect', '~> 0.8.0', require: 'omniauth_openid_connect'
+gem 'gitlab-omniauth-openid-connect', '~> 0.10.0', require: 'omniauth_openid_connect'
 gem 'omniauth-salesforce', '~> 1.0.5'
 gem 'omniauth-atlassian-oauth2', '~> 0.2.0'
 gem 'rack-oauth2', '~> 1.16.0'
@@ -64,7 +64,7 @@ gem 'akismet', '~> 3.0'
 gem 'invisible_captcha', '~> 1.1.0'
 
 # Two-factor authentication
-gem 'devise-two-factor', '~> 4.0.0'
+gem 'devise-two-factor', '~> 4.0.2'
 gem 'rqrcode-rails3', '~> 0.1.7'
 gem 'attr_encrypted', '~> 3.1.0'
 gem 'u2f', '~> 0.2.1'
@@ -87,7 +87,7 @@ gem 'gpgme', '~> 2.0.19'
 # LDAP Auth
 # GitLab fork with several improvements to original library. For full list of changes
 # see https://github.com/intridea/omniauth-ldap/compare/master...gitlabhq:master
-gem 'gitlab_omniauth-ldap', '~> 2.1.1', require: 'omniauth-ldap'
+gem 'gitlab_omniauth-ldap', '~> 2.2.0', require: 'omniauth-ldap'
 gem 'net-ldap', '~> 0.16.3'
 
 # API
@@ -110,21 +110,21 @@ gem 'hashie'
 gem 'hashie-forbidden_attributes'
 
 # Pagination
-gem 'kaminari', '~> 1.0'
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
 
 # HAML
 gem 'hamlit', '~> 2.15.0'
 
 # Files attachments
-gem 'carrierwave', '~> 1.3'
+gem 'carrierwave', '~> 1.3', '>= 1.3.2'
 gem 'mini_magick', '~> 4.10.1'
 
 # for backups
-gem 'fog-aws', '~> 3.12'
+gem 'fog-aws', '~> 3.12', '>= 3.12.0'
 # Locked until fog-google resolves https://github.com/fog/fog-google/issues/421.
 # Also see config/initializers/fog_core_patch.rb.
 gem 'fog-core', '= 2.1.0'
-gem 'fog-google', '~> 1.15', require: 'fog/google'
+gem 'fog-google', '~> 1.15', '>= 1.15.0', require: 'fog/google'
 gem 'fog-local', '~> 0.6'
 gem 'fog-openstack', '~> 1.0'
 gem 'fog-rackspace', '~> 0.1.1'
@@ -141,12 +141,12 @@ gem 'unf', '~> 0.1.4'
 gem 'seed-fu', '~> 2.3.7'
 
 # Search
-gem 'elasticsearch-model', '~> 6.1'
+gem 'elasticsearch-model', '~> 6.1', '>= 6.1.1'
 gem 'elasticsearch-rails', '~> 6.1', require: 'elasticsearch/rails/instrumentation'
 gem 'elasticsearch-api',   '~> 6.8.2'
-gem 'aws-sdk-core', '~> 3'
-gem 'aws-sdk-cloudformation', '~> 1'
-gem 'aws-sdk-s3', '~> 1'
+gem 'aws-sdk-core', '~> 3', '>= 3.104.3'
+gem 'aws-sdk-cloudformation', '~> 1', '>= 1.41.0'
+gem 'aws-sdk-s3', '~> 1', '>= 1.75.0'
 gem 'faraday_middleware-aws-sigv4', '~>0.3.0'
 
 # Markdown and HTML processing
@@ -154,7 +154,7 @@ gem 'html-pipeline', '~> 2.13.2'
 gem 'deckar01-task_list', '2.3.1'
 gem 'gitlab-markup', '~> 1.7.1'
 gem 'github-markup', '~> 1.7.0', require: 'github/markup'
-gem 'commonmarker', '~> 0.23.2'
+gem 'commonmarker', '~> 0.23.7'
 gem 'kramdown', '~> 2.3.1'
 gem 'RedCloth', '~> 4.3.2'
 gem 'rdoc', '~> 6.3.2'
@@ -162,29 +162,29 @@ gem 'org-ruby', '~> 0.9.12'
 gem 'creole', '~> 0.5.0'
 gem 'wikicloth', '0.8.1'
 gem 'asciidoctor', '~> 2.0.10'
-gem 'asciidoctor-include-ext', '~> 0.3.1', require: false
+gem 'asciidoctor-include-ext', '~> 0.4.0', require: false
 gem 'asciidoctor-plantuml', '~> 0.0.12'
 gem 'asciidoctor-kroki', '~> 0.5.0', require: false
 gem 'rouge', '~> 3.26.1'
 gem 'truncato', '~> 0.7.11'
 gem 'bootstrap_form', '~> 4.2.0'
-gem 'nokogiri', '~> 1.11.4'
+gem 'nokogiri', '~> 1.13.9'
 gem 'escape_utils', '~> 1.1'
 
 # Calendar rendering
 gem 'icalendar'
 
 # Diffs
-gem 'diffy', '~> 3.3'
+gem 'diffy', '~> 3.4', '>= 3.4.1'
 gem 'diff_match_patch', '~> 0.1.0'
 
 # Application server
-gem 'rack', '~> 2.2.3'
+gem 'rack', '~> 3.0.0'
 # https://github.com/sharpstone/rack-timeout/blob/master/README.md#rails-apps-manually
 gem 'rack-timeout', '~> 0.5.1', require: 'rack/timeout/base'
 
 group :puma do
-  gem 'puma', '~> 5.3.1', require: false
+  gem 'puma', '~> 5.6.4', require: false
   gem 'puma_worker_killer', '~> 0.3.1', require: false
 end
 
@@ -192,11 +192,11 @@ end
 gem 'state_machines-activerecord', '~> 0.8.0'
 
 # Issue tags
-gem 'acts-as-taggable-on', '~> 7.0'
+gem 'acts-as-taggable-on', '~> 7.0', '>= 7.0.0'
 
 # Background jobs
-gem 'sidekiq', '~> 6.2.2'
-gem 'sidekiq-cron', '~> 1.0'
+gem 'sidekiq', '~> 7.0.0'
+gem 'sidekiq-cron', '~> 1.0', '>= 1.0.4'
 gem 'redis-namespace', '~> 1.8.1'
 gem 'gitlab-sidekiq-fetcher', '0.8.0', require: 'sidekiq-reliable-fetch'
 
@@ -204,7 +204,7 @@ gem 'gitlab-sidekiq-fetcher', '0.8.0', require: 'sidekiq-reliable-fetch'
 gem 'fugit', '~> 1.2.1'
 
 # HTTP requests
-gem 'httparty', '~> 0.16.4'
+gem 'httparty', '~> 0.21.0'
 
 # Colored output to console
 gem 'rainbow', '~> 3.0'
@@ -243,7 +243,7 @@ gem 'jira-ruby', '~> 2.1.4'
 gem 'atlassian-jwt', '~> 0.2.0'
 
 # Flowdock integration
-gem 'flowdock', '~> 0.7'
+gem 'flowdock', '~> 0.7', '>= 0.7.1'
 
 # Slack integration
 gem 'slack-messenger', '~> 2.3.4'
@@ -258,14 +258,14 @@ gem 'asana', '~> 0.10.3'
 gem 'ruby-fogbugz', '~> 0.2.1'
 
 # Kubernetes integration
-gem 'kubeclient', '~> 4.9.2'
+gem 'kubeclient', '~> 4.9.3'
 
 # Sanitize user input
-gem 'sanitize', '~> 5.2.1'
+gem 'sanitize', '~> 6.0.1'
 gem 'babosa', '~> 1.0.4'
 
 # Sanitizes SVG input
-gem 'loofah', '~> 2.2'
+gem 'loofah', '~> 2.19', '>= 2.19.1'
 
 # Working with license
 gem 'licensee', '~> 9.14.1'
@@ -292,7 +292,7 @@ gem 'terser', '1.0.2'
 gem 'addressable', '~> 2.8'
 gem 'gemojione', '~> 3.3'
 gem 'gon', '~> 6.4.0'
-gem 'request_store', '~> 1.5'
+gem 'request_store', '~> 1.5', '>= 1.5.0'
 gem 'base32', '~> 0.3.0'
 
 gem 'gitlab-license', '~> 2.0'
@@ -305,7 +305,7 @@ gem 'sentry-raven', '~> 3.1'
 
 # PostgreSQL query parsing
 #
-gem 'pg_query', '~> 2.1'
+gem 'pg_query', '~> 2.1', '>= 2.1.1'
 
 gem 'premailer-rails', '~> 1.10.3'
 
@@ -317,15 +317,15 @@ gem 'thrift', '>= 0.14.0'
 
 # I18n
 gem 'ruby_parser', '~> 3.15', require: false
-gem 'rails-i18n', '~> 6.0'
+gem 'rails-i18n', '~> 6.0', '>= 6.0.0'
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.0'
 gem 'gettext', '~> 3.3', require: false, group: :development
 
 gem 'batch-loader', '~> 2.0.1'
 
 # Perf bar
-gem 'peek', '~> 1.1'
+gem 'peek', '~> 1.1', '>= 1.1.0'
 
 # Snowplow events tracking
 gem 'snowplow-tracker', '~> 0.6.1'
@@ -339,12 +339,12 @@ gem 'warning', '~> 1.2.0'
 
 group :development do
   gem 'lefthook', '~> 0.7.0', require: false
-  gem 'solargraph', '~> 0.43', require: false
+  gem 'solargraph', '~> 0.43', '>= 0.43.0', require: false
 
   gem 'letter_opener_web', '~> 1.4.1'
 
   # Better errors handler
-  gem 'better_errors', '~> 2.9.0'
+  gem 'better_errors', '~> 2.9.1'
 
   # thin instead webrick
   gem 'thin', '~> 1.8.0'
@@ -445,13 +445,13 @@ gem 'stackprof', '~> 0.2.15', require: false
 gem 'rbtrace', '~> 0.4', require: false
 gem 'memory_profiler', '~> 0.9', require: false
 gem 'benchmark-memory', '~> 0.1', require: false
-gem 'activerecord-explain-analyze', '~> 0.1', require: false
+gem 'activerecord-explain-analyze', '~> 0.1', '>= 0.1.0', require: false
 
 # OAuth
-gem 'oauth2', '~> 1.4'
+gem 'oauth2', '~> 1.4', '>= 1.4.11'
 
 # Health check
-gem 'health_check', '~> 3.0'
+gem 'health_check', '~> 3.0', '>= 3.0.0'
 
 # System information
 gem 'vmstat', '~> 2.3.0'
@@ -474,14 +474,14 @@ end
 gem 'spamcheck', '~> 0.1.0'
 
 # Gitaly GRPC protocol definitions
-gem 'gitaly', '~> 14.3.0.pre.rc2'
+gem 'gitaly', '~> 14.8.0.0.0'
 
 # KAS GRPC protocol definitions
 gem 'kas-grpc', '~> 0.0.2'
 
 gem 'grpc', '~> 1.30.2'
 
-gem 'google-protobuf', '~> 3.17.1'
+gem 'google-protobuf', '~> 3.19.6'
 
 gem 'toml-rb', '~> 2.0'
 
@@ -493,8 +493,8 @@ gem 'unleash', '~> 3.2.2'
 gem 'gitlab-experiment', '~> 0.6.4'
 
 # Structured logging
-gem 'lograge', '~> 0.5'
-gem 'grape_logging', '~> 1.7'
+gem 'lograge', '~> 0.11', '>= 0.11.2'
+gem 'grape_logging', '~> 1.8', '>= 1.8.3'
 
 # DNS Lookup
 gem 'gitlab-net-dns', '~> 0.9.1'
@@ -519,14 +519,14 @@ gem 'mail-smtp_pool', '~> 0.1.0', path: 'vendor/gems/mail-smtp_pool', require: f
 gem 'lockbox', '~> 0.6.2'
 
 # Email validation
-gem 'valid_email', '~> 0.1'
+gem 'valid_email', '~> 0.1', '>= 0.1.3'
 
 # JSON
 gem 'json', '~> 2.5.1'
 gem 'json_schemer', '~> 0.2.18'
 gem 'oj', '~> 3.10.6'
 gem 'multi_json', '~> 1.14.1'
-gem 'yajl-ruby', '~> 1.4.1', require: 'yajl'
+gem 'yajl-ruby', '~> 1.4.2', require: 'yajl'
 
 gem 'webauthn', '~> 2.3'
 
