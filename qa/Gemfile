@@ -3,9 +3,9 @@
 source 'https://rubygems.org'
 
 gem 'gitlab-qa', require: 'gitlab/qa'
-gem 'activesupport', '~> 6.1.4.1' # This should stay in sync with the root's Gemfile
+gem 'activesupport', '~> 6.1.7.3' # This should stay in sync with the root's Gemfile
 gem 'allure-rspec', '~> 2.15.0'
-gem 'capybara', '~> 3.35.0'
+gem 'capybara', '~> 3.35.3'
 gem 'capybara-screenshot', '~> 1.0.23'
 gem 'rake', '~> 12.3.3'
 gem 'rspec', '~> 3.10'
@@ -21,8 +21,8 @@ gem 'rotp', '~> 3.1.0'
 gem 'timecop', '~> 0.9.1'
 gem 'parallel', '~> 1.19'
 gem 'rspec-parameterized', '~> 0.4.2'
-gem 'octokit', '~> 4.21'
-gem 'webdrivers', '~> 4.6'
+gem 'octokit', '~> 4.21', '>= 4.21.0'
+gem 'webdrivers', '~> 4.6', '>= 4.6.0'
 gem 'zeitwerk', '~> 2.4'
 gem 'influxdb-client', '~> 1.17'
 
