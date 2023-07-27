@@ -298,7 +298,7 @@ gem 'base32', '~> 0.3.0'
 gem 'gitlab-license', '~> 2.0'
 
 # Protect against bruteforcing
-gem 'rack-attack', '~> 6.3.0'
+gem 'rack-attack', '~> 6.7.0'
 
 # Sentry integration
 gem 'sentry-raven', '~> 3.1'
