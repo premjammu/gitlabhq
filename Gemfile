@@ -42,7 +42,7 @@ gem 'omniauth-facebook', '~> 4.0.0'
 gem 'omniauth-github', '~> 1.4'
 gem 'omniauth-gitlab', '~> 1.0.2'
 gem 'omniauth-google-oauth2', '~> 0.6.0'
-gem 'omniauth-kerberos', '~> 0.3.0', group: :kerberos
+gem 'omniauth-kerberos', '~> 0.4.0', group: :kerberos
 gem 'omniauth-oauth2-generic', '~> 0.2.2'
 gem 'omniauth-saml', '~> 1.10'
 gem 'omniauth-shibboleth', '~> 1.3.0'
@@ -185,7 +185,7 @@ gem 'rack-timeout', '~> 0.5.1', require: 'rack/timeout/base'
 
 group :puma do
   gem 'puma', '~> 5.3.1', require: false
-  gem 'puma_worker_killer', '~> 0.3.1', require: false
+  gem 'puma_worker_killer', '~> 1.0.0', require: false
 end
 
 # State machine
