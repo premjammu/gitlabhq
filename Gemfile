@@ -479,7 +479,7 @@ gem 'gitaly', '~> 14.3.0.pre.rc2'
 # KAS GRPC protocol definitions
 gem 'kas-grpc', '~> 0.0.2'
 
-gem 'grpc', '~> 1.30.2'
+gem 'grpc', '~> 1.58.3'
 
 gem 'google-protobuf', '~> 3.17.1'
 
