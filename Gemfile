@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'rails', '~> 6.1.4.1'
+gem 'rails', '~> 7.0.0.0'
 
 gem 'bootsnap', '~> 1.4.6'
 
@@ -100,8 +100,8 @@ gem 'graphql', '~> 1.11.8'
 # NOTE: graphiql-rails v1.5+ doesn't work: https://gitlab.com/gitlab-org/gitlab/issues/31771
 # TODO: remove app/views/graphiql/rails/editors/show.html.erb when https://github.com/rmosolgo/graphiql-rails/pull/71 is released:
 # https://gitlab.com/gitlab-org/gitlab/issues/31747
-gem 'graphiql-rails', '~> 1.4.10'
-gem 'apollo_upload_server', '~> 2.1.0'
+gem 'graphiql-rails', '~> 1.10.0'
+gem 'apollo_upload_server', '~> 2.1.2'
 gem 'graphql-docs', '~> 1.6.0', group: [:development, :test]
 gem 'graphlient', '~> 0.4.0' # Used by BulkImport feature (group::import)
 
