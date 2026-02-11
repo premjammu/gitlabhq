@@ -20,7 +20,7 @@ gem 'pg', '~> 1.1'
 gem 'rugged', '~> 1.1'
 gem 'grape-path-helpers', '~> 1.7.0'
 
-gem 'faraday', '~> 1.0'
+gem 'faraday', '~> 2.14', '>= 2.14.1'
 gem 'marginalia', '~> 1.10.0'
 
 # Authorization
@@ -34,16 +34,16 @@ gem 'doorkeeper-openid_connect', '~> 1.7.5'
 gem 'rexml', '~> 3.2.5'
 gem 'ruby-saml', '~> 1.13.0'
 gem 'omniauth', '~> 1.8'
-gem 'omniauth-auth0', '~> 2.0.0'
-gem 'omniauth-azure-activedirectory-v2', '~> 1.0'
+gem 'omniauth-auth0', '~> 2.1.0'
+gem 'omniauth-azure-activedirectory-v2', '~> 2.0', '>= 2.0.0'
 gem 'omniauth-azure-oauth2', '~> 0.0.9' # Deprecated v1 version
 gem 'omniauth-cas3', '~> 1.1.4'
-gem 'omniauth-facebook', '~> 4.0.0'
-gem 'omniauth-github', '~> 1.4'
-gem 'omniauth-gitlab', '~> 1.0.2'
-gem 'omniauth-google-oauth2', '~> 0.6.0'
+gem 'omniauth-facebook', '~> 5.0.0'
+gem 'omniauth-github', '~> 2.0', '>= 2.0.0'
+gem 'omniauth-gitlab', '~> 1.0.4'
+gem 'omniauth-google-oauth2', '~> 0.6.1'
 gem 'omniauth-kerberos', '~> 0.3.0', group: :kerberos
-gem 'omniauth-oauth2-generic', '~> 0.2.2'
+gem 'omniauth-oauth2-generic', '~> 0.2.3'
 gem 'omniauth-saml', '~> 1.10'
 gem 'omniauth-shibboleth', '~> 1.3.0'
 gem 'omniauth-twitter', '~> 1.4'
@@ -73,7 +73,7 @@ gem 'u2f', '~> 0.2.1'
 gem 'validates_hostname', '~> 1.0.11'
 gem 'rubyzip', '~> 2.0.0', require: 'zip'
 # GitLab Pages letsencrypt support
-gem 'acme-client', '~> 2.0', '>= 2.0.6'
+gem 'acme-client', '~> 2.0', '>= 2.0.10'
 
 # Browser detection
 gem 'browser', '~> 4.2'
@@ -103,7 +103,7 @@ gem 'graphql', '~> 1.11.8'
 gem 'graphiql-rails', '~> 1.4.10'
 gem 'apollo_upload_server', '~> 2.1.0'
 gem 'graphql-docs', '~> 1.6.0', group: [:development, :test]
-gem 'graphlient', '~> 0.4.0' # Used by BulkImport feature (group::import)
+gem 'graphlient', '~> 0.7.0' # Used by BulkImport feature (group::import)
 
 gem 'hashie'
 # Disable strong_params so that Mash does not respond to :permitted?
@@ -124,15 +124,15 @@ gem 'fog-aws', '~> 3.12'
 # Locked until fog-google resolves https://github.com/fog/fog-google/issues/421.
 # Also see config/initializers/fog_core_patch.rb.
 gem 'fog-core', '= 2.1.0'
-gem 'fog-google', '~> 1.15', require: 'fog/google'
+gem 'fog-google', '~> 1.16', '>= 1.16.0', require: 'fog/google'
 gem 'fog-local', '~> 0.6'
 gem 'fog-openstack', '~> 1.0'
 gem 'fog-rackspace', '~> 0.1.1'
 gem 'fog-aliyun', '~> 0.3'
-gem 'gitlab-fog-azure-rm', '~> 1.2.0', require: false
+gem 'gitlab-fog-azure-rm', '~> 2.0.0', require: false
 
 # for Google storage
-gem 'google-api-client', '~> 0.33'
+gem 'google-api-client', '~> 0.53', '>= 0.53.0'
 
 # for aws storage
 gem 'unf', '~> 0.1.4'
@@ -141,13 +141,13 @@ gem 'unf', '~> 0.1.4'
 gem 'seed-fu', '~> 2.3.7'
 
 # Search
-gem 'elasticsearch-model', '~> 6.1'
+gem 'elasticsearch-model', '~> 7.0', '>= 7.0.0'
 gem 'elasticsearch-rails', '~> 6.1', require: 'elasticsearch/rails/instrumentation'
 gem 'elasticsearch-api',   '~> 6.8.2'
 gem 'aws-sdk-core', '~> 3'
 gem 'aws-sdk-cloudformation', '~> 1'
 gem 'aws-sdk-s3', '~> 1'
-gem 'faraday_middleware-aws-sigv4', '~>0.3.0'
+gem 'faraday_middleware-aws-sigv4', '~> 0.4.0'
 
 # Markdown and HTML processing
 gem 'html-pipeline', '~> 2.13.2'
@@ -252,7 +252,7 @@ gem 'slack-messenger', '~> 2.3.4'
 gem 'hangouts-chat', '~> 0.0.5', require: 'hangouts_chat'
 
 # Asana integration
-gem 'asana', '~> 0.10.3'
+gem 'asana', '~> 2.0.1'
 
 # FogBugz integration
 gem 'ruby-fogbugz', '~> 0.2.1'
@@ -268,7 +268,7 @@ gem 'babosa', '~> 1.0.4'
 gem 'loofah', '~> 2.2'
 
 # Working with license
-gem 'licensee', '~> 9.14.1'
+gem 'licensee', '~> 9.15.0'
 
 # Detect and convert string character encoding
 gem 'charlock_holmes', '~> 0.7.7'
@@ -392,11 +392,11 @@ group :development, :test do
 
   gem 'rblineprof', '~> 0.3.6', platform: :mri, require: false
 
-  gem 'test_file_finder', '~> 0.1.3'
+  gem 'test_file_finder', '~> 0.2.0'
 end
 
 group :development, :test, :danger do
-  gem 'gitlab-dangerfiles', '~> 2.3.0', require: false
+  gem 'gitlab-dangerfiles', '~> 2.3.1', require: false
 end
 
 group :development, :test, :coverage do
@@ -432,7 +432,7 @@ group :test do
   gem 'derailed_benchmarks', require: false
 end
 
-gem 'octokit', '~> 4.15'
+gem 'octokit', '~> 4.23', '>= 4.23.0'
 
 # https://gitlab.com/gitlab-org/gitlab/issues/207207
 gem 'gitlab-mail_room', '~> 0.0.9', require: 'mail_room'
@@ -448,7 +448,7 @@ gem 'benchmark-memory', '~> 0.1', require: false
 gem 'activerecord-explain-analyze', '~> 0.1', require: false
 
 # OAuth
-gem 'oauth2', '~> 1.4'
+gem 'oauth2', '~> 1.4', '>= 1.4.8'
 
 # Health check
 gem 'health_check', '~> 3.0'
